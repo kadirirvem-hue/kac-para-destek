@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kac-para-cli — Personal YouTube upload tool</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 680px; margin: 0 auto; padding: 32px 20px 64px;
+    line-height: 1.65; color: #1c2a27; background: #f6f8f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dce8e2; background: #101817; }
+    a { color: #f2b544; }
+    h1, h2 { color: #f3f6f2; }
+  }
+  h1 { font-size: 1.6em; } h2 { font-size: 1.15em; margin-top: 1.8em; }
+  a { color: #a5761b; }
+  .kucuk { font-size: .85em; opacity: .75; }
+  code { background: rgba(128,128,128,.15); padding: 1px 5px; border-radius: 4px; }
+  hr { border: 0; border-top: 1px solid rgba(128,128,128,.3); margin: 2.5em 0; }
+</style>
+</head>
+<body>
+<h1>kac-para-cli</h1>
+<p class="kucuk">A personal command-line tool. Last updated: 27 August 2026.</p>
+
+<p><strong>kac-para-cli</strong> is a personal command-line tool that uploads
+videos to its owner's own YouTube channel,
+<a href="https://youtube.com/@kacparakanali">Kaç Para?</a>.</p>
+
+<h2>Who uses it</h2>
+<p>One person: the developer and channel owner. The tool is <strong>not
+distributed, not sold, not offered to any other user</strong>, and is not a
+public product or service. There is no sign-up, no user account system and no
+third-party access.</p>
+
+<h2>What it does</h2>
+<p>It generates a short vertical video from data the owner has collected
+manually, then uploads that video to the owner's own channel. Every number
+shown in a video comes from a public, cited source.</p>
+
+<h2>YouTube API usage</h2>
+<ul>
+  <li><code>videos.insert</code> — uploads a video to the owner's own channel</li>
+  <li><code>channels.list</code> (<code>mine=true</code>) — confirms the
+      authorisation is bound to the correct channel</li>
+</ul>
+<p>No other endpoint is called. Requested quota is the default; the tool
+performs at most two uploads per day.</p>
+
+<h2>Data</h2>
+<p>The tool collects no user data and stores no YouTube data. See the
+<a href="gizlilik.html">privacy policy</a> and the <a href="kosullar.html">terms of service</a>.</p>
+
+<h2>Access</h2>
+<p>The tool has no web interface and no public download. It runs locally on the
+owner's own machine. Screenshots or a walkthrough can be provided to the
+YouTube API Services team on request:
+<a href="mailto:rakamstudyo@gmail.com">rakamstudyo@gmail.com</a></p>
+
+<hr>
+
+<h1>kac-para-cli (Türkçe)</h1>
+<p><strong>kac-para-cli</strong>, sahibinin kendi YouTube kanalına
+(<a href="https://youtube.com/@kacparakanali">Kaç Para?</a>) video yükleyen
+kişisel bir komut satırı aracıdır.</p>
+<p>Tek kullanıcısı geliştiricinin kendisidir. Dağıtılmamıştır, satılmamaktadır,
+başka kullanıcılara sunulmamaktadır ve herkese açık bir ürün ya da hizmet
+değildir. Kullanıcı verisi toplamaz, YouTube verisi saklamaz.</p>
+<p>Kullanılan uç noktalar: <code>videos.insert</code> ve
+<code>channels.list</code>. Başka uç nokta çağrılmaz.</p>
+<p><a href="gizlilik.html">Gizlilik politikası</a> · <a href="kosullar.html">Hizmet şartları</a></p>
+</body>
+</html>

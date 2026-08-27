@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>kac-para-cli — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 680px; margin: 0 auto; padding: 32px 20px 64px;
+    line-height: 1.65; color: #1c2a27; background: #f6f8f7;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dce8e2; background: #101817; }
+    a { color: #f2b544; }
+    h1, h2 { color: #f3f6f2; }
+  }
+  h1 { font-size: 1.6em; } h2 { font-size: 1.15em; margin-top: 1.8em; }
+  a { color: #a5761b; }
+  .kucuk { font-size: .85em; opacity: .75; }
+  code { background: rgba(128,128,128,.15); padding: 1px 5px; border-radius: 4px; }
+  hr { border: 0; border-top: 1px solid rgba(128,128,128,.3); margin: 2.5em 0; }
+</style>
+</head>
+<body>
+<h1>kac-para-cli — Privacy Policy</h1>
+<p class="kucuk">Last updated: 27 August 2026</p>
+
+<p><strong>Summary: this tool collects no personal data from anyone. It has
+exactly one user — its owner — and it stores no YouTube data.</strong></p>
+
+<h2>1. Who this covers</h2>
+<p>kac-para-cli is a personal command-line tool run locally by its owner. It is
+not distributed and has no other users, so there is no user base whose data
+could be collected.</p>
+
+<h2>2. Data collected</h2>
+<p>None. The tool does not collect, request, or receive personal information
+from any person. There is no analytics, no telemetry, no tracking and no
+crash reporting.</p>
+
+<h2>3. YouTube data</h2>
+<p>The tool calls two YouTube Data API endpoints:</p>
+<ul>
+  <li><code>videos.insert</code> — to upload a video to the owner's own channel</li>
+  <li><code>channels.list</code> (<code>mine=true</code>) — to confirm the
+      authorisation is bound to the correct channel</li>
+</ul>
+<p>The only value retained is the video ID returned after an upload, written to
+a local text file on the owner's own machine so the same video is not uploaded
+twice. No other YouTube data is stored, cached, processed, displayed,
+transferred or sold. No YouTube data is shared with any third party.</p>
+
+<h2>4. Credentials</h2>
+<p>The OAuth refresh token and API credentials are stored in a local
+environment file on the owner's own machine. They are never transmitted
+anywhere except to Google's own authentication endpoints. Authorisation can be
+revoked at any time from the owner's Google Account security settings.</p>
+
+<h2>5. Third parties</h2>
+<p>No data is shared with third parties. The tool has no server, no database
+and no backend of any kind.</p>
+
+<h2>6. Children</h2>
+<p>The tool is not directed at children and has no users other than its owner.</p>
+
+<h2>7. Changes</h2>
+<p>Any change to this policy will be published on this page with an updated
+date.</p>
+
+<h2>8. Contact</h2>
+<p><a href="mailto:rakamstudyo@gmail.com">rakamstudyo@gmail.com</a></p>
+
+<hr>
+
+<h1>Gizlilik Politikası (Türkçe)</h1>
+<p><strong>Özet: bu araç hiç kimseden kişisel veri toplamaz. Tek kullanıcısı
+sahibidir ve hiçbir YouTube verisi saklamaz.</strong></p>
+<p>Araç yerel olarak sahibinin kendi bilgisayarında çalışır. Analitik, telemetri,
+takip ve çökme raporlaması yoktur. Sunucusu, veritabanı ve arka ucu yoktur.</p>
+<p>Yükleme sonrası dönen video kimliği, aynı videonun iki kez yüklenmemesi için
+yerel bir metin dosyasına yazılır. Başka hiçbir YouTube verisi saklanmaz,
+işlenmez, gösterilmez, aktarılmaz ya da satılmaz.</p>
+<p>OAuth yenileme anahtarı yalnızca yerel ortam dosyasında tutulur ve Google'ın
+kendi kimlik doğrulama uçları dışında hiçbir yere gönderilmez. Yetki, Google
+Hesabı güvenlik ayarlarından istenildiği zaman iptal edilebilir.</p>
+<p>İletişim: <a href="mailto:rakamstudyo@gmail.com">rakamstudyo@gmail.com</a></p>
+</body>
+</html>
